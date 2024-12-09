@@ -36,6 +36,16 @@
   }
 }
 
+/* Hide container labels */
+@media (-moz-bool-pref: "uc.bookmarks.hide-container-name") {
+  #personal-bookmarks .bookmark-item[container] .toolbarbutton-text {
+    display: none !important; 
+  }
+  .bookmark-item[container] .toolbarbutton-icon{
+    margin-inline-end: 0 !important;
+  }
+}
+
 @media (not (-moz-bool-pref: "uc.bookmarks.transparent")) {
     #PersonalToolbar:not([customizing]) {
       margin-bottom: -25px !important; 
