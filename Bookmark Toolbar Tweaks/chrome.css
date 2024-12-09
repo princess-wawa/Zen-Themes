@@ -28,9 +28,12 @@
 
 /* Hide bookmark labels */
 @media (-moz-bool-pref: "uc.bookmarks.hide-name") {
-    #personal-bookmarks .bookmark-item:not([container]) .toolbarbutton-text { 
-       display: none !important; 
-   }
+  #personal-bookmarks .bookmark-item:not([container]) .toolbarbutton-text {
+    display: none !important; 
+  }
+  .bookmark-item:not([container]) .toolbarbutton-icon{
+    margin-inline-end: 0 !important;
+  }
 }
 
 @media (not (-moz-bool-pref: "uc.bookmarks.transparent")) {
